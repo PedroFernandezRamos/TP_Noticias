@@ -1,11 +1,11 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-filtro-categoria',
   templateUrl: './filtro-categoria.component.html',
   styleUrls: ['./filtro-categoria.component.css']
 })
-export class FiltroCategoriaComponent {
+export class FiltroCategoriaComponent implements OnInit{
 
   @Output() parametrosSeleccionados = new EventEmitter<any>();
   categoriaSeleccionada = 'general';

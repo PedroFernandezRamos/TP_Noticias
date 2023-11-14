@@ -1,1 +1,20 @@
-<p>filtro-fuente works!</p>
+<div class="jumbotron mt-5">
+    <h2 class="heading">
+        Filtra noticias por fuente
+    </h2>
+    <div class="row">
+        <div class="col-lg-8 offset lg 2">
+            <form (ngSubmit)="buscarNoticiaPorFuente()" [formGroup]="formulario">
+                  <div class="form-group">
+                    <input class="form-control form-control-lg" type="text" name="fuente" formControlName="fuente" placeholder="Ingrese una fuente">
+                  </div>
+                  <div class="error"
+                    *ngIf="validar('fuente', 'required')">
+                    <span>El campo es requerido</span>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-block btn-lg btn-custom">Buscar</button>
+            </form>
+            
+        </div>
+    </div>
+</div>

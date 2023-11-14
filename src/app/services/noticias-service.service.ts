@@ -31,6 +31,16 @@ export class NoticiasServiceService {
     return this.http.get(URL);
   }
 
+  getNoticiasPorPalabraClave(palabra: String): Observable<any>{
+    const URL = 'https://newsapi.org/v2/everything?q='+palabra+'&apiKey=8688eb84ac2c45cc888fcb7aa2b81d0d';
+    return this.http.get(URL);
+  }
+
+  getNoticiasPorFecha(fechaInicio: String, fechaFinal: String): Observable<any>{
+    const URL = 'https://newsapi.org/v2/everything?q=a&from='+fechaInicio+'&to='+fechaFinal+'&apiKey=8688eb84ac2c45cc888fcb7aa2b81d0d';   /// el q=a es porque no te deja buscar por fecha nada mas entonces agregue como palabra clave una a 
+    return this.http.get(URL);
+  }
+
 
 }
 

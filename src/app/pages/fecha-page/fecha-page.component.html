@@ -1,0 +1,5 @@
+<div class="container">
+    <app-filtro-fecha (parametrosSeleccionados)='buscarNoticiasPorFecha($event)'></app-filtro-fecha>
+    <app-spinner *ngIf="loading===true"></app-spinner>
+    <app-listado-noticias [listadoNoticias]="listadoDeNoticias"></app-listado-noticias>
+  </div>

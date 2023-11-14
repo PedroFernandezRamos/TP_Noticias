@@ -2,16 +2,16 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-filtro-fuente',
-  templateUrl: './filtro-fuente.component.html',
-  styleUrls: ['./filtro-fuente.component.css']
+  selector: 'app-filtro-palabra-clave',
+  templateUrl: './filtro-palabra-clave.component.html',
+  styleUrls: ['./filtro-palabra-clave.component.css']
 })
-export class FiltroFuenteComponent implements OnInit{
+export class FiltroPalabraClaveComponent implements OnInit{
 
   @Output() parametrosSeleccionados = new EventEmitter<any>();
 
   formulario: FormGroup = this.formBuilder.group({
-    fuente:['', Validators.required]
+    palabraClave:['', [Validators.required, Validators.minLength(3)]]
   })
 
   
@@ -21,15 +21,12 @@ export class FiltroFuenteComponent implements OnInit{
     
   }
 
-  buscarNoticiaPorFuente(){
+  buscarNoticiaPorPalabraClave(){
     if(this.formulario.invalid){
       this.formulario.markAllAsTouched()
       return;
     }
-    let fuenteSeleccionada : string= this.formulario.controls['fuente'].value;
-    fuenteSeleccionada= fuenteSeleccionada.toLowerCase().replace(/^\s+|\s+$/g, '').replace(/\s+/g, '-');   /// reemplaza los espacios por - y pone todo en minuscula para que encuentre la fuente
-    console.log(fuenteSeleccionada);
-    this.parametrosSeleccionados.emit(fuenteSeleccionada);
+    this.parametrosSeleccionados.emit(this.formulario.controls['palabraClave'].value);
     
   }
 

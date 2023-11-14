@@ -1,0 +1,24 @@
+<div class="jumbotron mt-5">
+    <h2 class="heading">
+        Filtra noticias por palabra clave
+    </h2>
+    <div class="row">
+        <div class="col-lg-8 offset lg 2">
+            <form (ngSubmit)="buscarNoticiaPorPalabraClave()" [formGroup]="formulario">
+                  <div class="form-group">
+                    <input class="form-control form-control-lg" type="text" name="palabraClave" formControlName="palabraClave" placeholder="Ingrese una palabra clave">
+                  </div>
+                  <div class="error"
+                    *ngIf="validar('palabraClave', 'required')">
+                    <span>El campo es requerido</span>
+                  </div>
+                  <div class="error"
+                    *ngIf="validar('palabraClave', 'minlength')">
+                    <span>Minimo 3 caracteres</span>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-block btn-lg btn-custom">Buscar</button>
+            </form>
+            
+        </div>
+    </div>
+</div>

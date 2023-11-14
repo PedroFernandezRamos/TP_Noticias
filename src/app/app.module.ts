@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { ListadoNoticiasComponent } from './components/listado-noticias/listado-noticias.component';
 import { SpinnerComponent } from './shared/spinner/spinner.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { CategoriaPageComponent } from './pages/categoria-page/categoria-page.component';
@@ -15,6 +15,10 @@ import { FiltroCategoriaComponent } from './components/filtro-categoria/filtro-c
 import { FiltroFuenteComponent } from './components/filtro-fuente/filtro-fuente.component';
 import { FiltroPaisComponent } from './components/filtro-pais/filtro-pais.component';
 import { PaisPageComponent } from './pages/pais-page/pais-page.component';
+import { FiltroPalabraClaveComponent } from './components/filtro-palabra-clave/filtro-palabra-clave.component';
+import { FiltroFechaComponent } from './components/filtro-fecha/filtro-fecha.component';
+import { PalabraClavePageComponent } from './pages/palabra-clave-page/palabra-clave-page.component';
+import { FechaPageComponent } from './pages/fecha-page/fecha-page.component';
 
 
 @NgModule({
@@ -29,13 +33,18 @@ import { PaisPageComponent } from './pages/pais-page/pais-page.component';
     FiltroCategoriaComponent,
     FiltroFuenteComponent,
     FiltroPaisComponent,
-    PaisPageComponent
+    PaisPageComponent,
+    FiltroPalabraClaveComponent,
+    FiltroFechaComponent,
+    PalabraClavePageComponent,
+    FechaPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

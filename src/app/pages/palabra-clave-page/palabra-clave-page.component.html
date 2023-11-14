@@ -1,0 +1,5 @@
+<div class="container">
+    <app-filtro-palabra-clave (parametrosSeleccionados)='buscarNoticiasPorPalabraClave($event)'></app-filtro-palabra-clave>
+    <app-spinner *ngIf="loading===true"></app-spinner>
+    <app-listado-noticias [listadoNoticias]="listadoDeNoticias"></app-listado-noticias>
+  </div>

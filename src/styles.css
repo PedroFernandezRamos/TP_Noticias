@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+.error{
+    background-color: rgb(249, 200, 200);
+    color: rgb(126, 4, 4);
+    text-align: center;
+    width: 100%;
+    border-radius: .3rem;
+    margin-top: .2rem;
+    margin-bottom: .2rem;
+  }
+
+  .btn-custom {
+    margin-top: 0.2rem;
+  }
