@@ -1,6 +1,2 @@
 <app-navbar></app-navbar>
-<div class="container">
-  <app-filtros (parametrosSeleccionados)='buscarNoticias($event)'></app-filtros>
-  <app-spinner *ngIf="loading===true"></app-spinner>
-  <app-listado-noticias [listadoNoticias]="listadoDeNoticias"></app-listado-noticias>
-</div>
+<router-outlet></router-outlet>

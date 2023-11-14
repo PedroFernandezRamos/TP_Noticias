@@ -1,0 +1,5 @@
+<div class="container">
+    <app-filtro-fuente (parametrosSeleccionados)='buscarNoticiasPorFuente($event)'></app-filtro-fuente>
+    <app-spinner *ngIf="loading===true"></app-spinner>
+    <app-listado-noticias [listadoNoticias]="listadoDeNoticias"></app-listado-noticias>
+  </div>
