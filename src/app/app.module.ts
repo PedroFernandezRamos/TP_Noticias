@@ -15,6 +15,7 @@ import { FiltroCategoriaComponent } from './components/filtro-categoria/filtro-c
 import { FiltroFuenteComponent } from './components/filtro-fuente/filtro-fuente.component';
 import { FiltroPaisComponent } from './components/filtro-pais/filtro-pais.component';
 import { PaisPageComponent } from './pages/pais-page/pais-page.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { PaisPageComponent } from './pages/pais-page/pais-page.component';
     FiltroCategoriaComponent,
     FiltroFuenteComponent,
     FiltroPaisComponent,
-    PaisPageComponent
+    PaisPageComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
