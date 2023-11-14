@@ -26,22 +26,23 @@ export class CategoriaPageComponent {
         console.log(resultado);
         this.loading = false;
         const articulos: any[] = resultado.articles;
-
+        let img:string = ''
         articulos.forEach(element => {
-          
-          if(element.urlToImage != null){                 ///si tiene imagen lo carga a la lista y sino pasa al siguiente elemento
+          img = 'https://img.freepik.com/vector-premium/icono-marco-fotos-foto-vacia-blanco-vector-sobre-fondo-transparente-aislado-eps-10_399089-1290.jpg'
+          if(element.urlToImage != null){                /// si tiene imagen la carga y si no pone por default una vacia
+            img = element.urlToImage
+          }
             this.listadoDeNoticias.push({
               fuente: element.source.name,
               autor: element.author,
               titulo: element.title,
              descripcion: element.description,
              url: element.url,
-             imagen: element.urlToImage,
+             imagen: img,
              fecha: element.publishedAt,
             contenido: element.content
           })
-          }
-        });
+          });
 
       },
       (error) => {
