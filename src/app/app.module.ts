@@ -19,6 +19,7 @@ import { FiltroPalabraClaveComponent } from './components/filtro-palabra-clave/f
 import { FiltroFechaComponent } from './components/filtro-fecha/filtro-fecha.component';
 import { PalabraClavePageComponent } from './pages/palabra-clave-page/palabra-clave-page.component';
 import { FechaPageComponent } from './pages/fecha-page/fecha-page.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { FechaPageComponent } from './pages/fecha-page/fecha-page.component';
     FiltroPalabraClaveComponent,
     FiltroFechaComponent,
     PalabraClavePageComponent,
-    FechaPageComponent
+    FechaPageComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
