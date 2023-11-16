@@ -23,6 +23,7 @@ export class FavoritasService {
   }
 
   postFav(noticia: Noticia): Observable<Noticia> {
+    
     return this.http.post<Noticia>(favsURL, noticia, httpOptions);
   }
 
