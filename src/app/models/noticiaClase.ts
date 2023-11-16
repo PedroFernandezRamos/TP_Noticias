@@ -1,4 +1,5 @@
 export interface Noticia{
+    id?: number,
     fuente: string | null,
     autor: string| null,
     titulo: string| null,
