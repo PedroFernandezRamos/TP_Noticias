@@ -7,7 +7,8 @@ import { PaisPageComponent } from './pages/pais-page/pais-page.component';
 import { PalabraClavePageComponent } from './pages/palabra-clave-page/palabra-clave-page.component';
 import { FechaPageComponent } from './pages/fecha-page/fecha-page.component';
 import { FavoritasPageComponent } from './pages/favoritas-page/favoritas-page.component';
-
+import { AboutUsComponent } from './components/about-us/about-us.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
 const routes: Routes = [
   { path: 'home', component: HomePageComponent },
   { path: 'categoria', component: CategoriaPageComponent },
@@ -16,6 +17,8 @@ const routes: Routes = [
   { path: 'palabra_clave', component: PalabraClavePageComponent },
   { path: 'fecha', component: FechaPageComponent },
   { path: 'favoritas', component: FavoritasPageComponent },
+  { path: 'nosotros', component: AboutUsComponent },
+  { path: 'contacto', component: ContactoComponent },
   { path: '**', redirectTo: 'home' },
 ];
 

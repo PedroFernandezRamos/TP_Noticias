@@ -23,6 +23,8 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { NoticiaCardComponent } from './components/noticia-card/noticia-card.component';
 import { ListadoFavoritasComponent } from './components/listado-favoritas/listado-favoritas.component';
 import { FavoritasPageComponent } from './pages/favoritas-page/favoritas-page.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 
 @NgModule({
@@ -45,7 +47,9 @@ import { FavoritasPageComponent } from './pages/favoritas-page/favoritas-page.co
     FooterComponent,
     NoticiaCardComponent,
     ListadoFavoritasComponent,
-    FavoritasPageComponent
+    FavoritasPageComponent,
+    ContactoComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
