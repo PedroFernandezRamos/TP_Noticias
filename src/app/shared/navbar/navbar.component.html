@@ -1,17 +1,29 @@
-<nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">NOTICIAS</a>
+<nav class="navbar navbar-expand-lg bg-dark sticky-top navbar-custom" data-bs-theme="dark">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+          <img src="assets/noticias-word.png" alt="Logo" class="logo">
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarColor02">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Home
-              <span class="visually-hidden">(current)</span>
-            </a>
-          </li>
-        </ul>
+          <ul class="navbar-nav me-auto">
+              <li class="nav-item dropdown" (mouseenter)="openMenu()" (mouseleave)="closeMenu()">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Buscar por</a>
+                  <div [ngClass]="{'dropdown-menu show': isMenuOpen, 'd-none': !isMenuOpen}" data-bs-popper="static">
+                      <a class="nav-link active" href="#" routerLink="/categoria">Categoria</a>
+                      <a class="nav-link active" href="#" routerLink="/pais">País</a>
+                      <a class="nav-link active" href="#" routerLink="/fuente">Fuente</a>
+                      <a class="nav-link active" href="#" routerLink="/palabra_clave">General</a>
+                  </div>
+              </li>
+              <a class="nav-link active" href="#" routerLink="/contacto">Contacto
+                  <span class="visually-hidden">(current)</span>
+              </a>
+              <a class="nav-link active" href="#" routerLink="/nosotros">Nosotros
+                  <span class="visually-hidden">(current)</span>
+              </a>
+          </ul>
       </div>
-    </div>
-  </nav>
+  </div>
+</nav>

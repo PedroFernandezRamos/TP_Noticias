@@ -21,6 +21,8 @@ import { PalabraClavePageComponent } from './pages/palabra-clave-page/palabra-cl
 import { FechaPageComponent } from './pages/fecha-page/fecha-page.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { NoticiaCardComponent } from './components/noticia-card/noticia-card.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 
 @NgModule({
@@ -41,7 +43,9 @@ import { NoticiaCardComponent } from './components/noticia-card/noticia-card.com
     PalabraClavePageComponent,
     FechaPageComponent,
     FooterComponent,
-    NoticiaCardComponent
+    NoticiaCardComponent,
+    ContactoComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,

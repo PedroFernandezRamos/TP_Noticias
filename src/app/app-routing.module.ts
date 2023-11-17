@@ -6,6 +6,8 @@ import { FuentePageComponent } from './pages/fuente-page/fuente-page.component';
 import { PaisPageComponent } from './pages/pais-page/pais-page.component';
 import { PalabraClavePageComponent } from './pages/palabra-clave-page/palabra-clave-page.component';
 import { FechaPageComponent } from './pages/fecha-page/fecha-page.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
 
 const routes: Routes = [
   {path:'home', component: HomePageComponent},
@@ -14,6 +16,8 @@ const routes: Routes = [
   {path:'pais', component: PaisPageComponent},
   {path:'palabra_clave', component: PalabraClavePageComponent},
   {path:'fecha', component: FechaPageComponent},
+  {path:'nosotros', component:AboutUsComponent},
+  {path:'contacto', component:ContactoComponent},
   {path:'**', redirectTo:'home'},
   
 ];
