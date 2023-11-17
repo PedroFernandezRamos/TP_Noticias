@@ -23,15 +23,26 @@
       "id": 2
     },
     {
-      "fuente": "Android Central",
-      "autor": "tips@androidcentral.com (Nickolas Diaz)",
-      "titulo": "Google Chrome gains a 'smarter' address bar for searches and bookmarks",
-      "descripcion": "Google details several updates arriving on Chrome for desktop and mobile for the betterment of its address bar.",
-      "url": "https://www.androidcentral.com/apps-software/google-chrome-address-bar-upgrades",
-      "imagen": "https://cdn.mos.cms.futurecdn.net/3RkHnVcSQdbrdcrEb9pjpQ-1200-80.jpg",
-      "fecha": "2023-10-18T18:39:27Z",
-      "contenido": "<ul><li>Google details new improvements arriving for Chrome on desktop, such as \"smarter\" auto-completions for previously visited URLs.</li><li>The address bar will also display popular website sugge… [+2750 chars]",
+      "fuente": "Business Insider",
+      "autor": "Erin Greenawald",
+      "titulo": "How 2 successful small-business owners use YouTube for cheap, sustainable, SEO-driven marketing",
+      "descripcion": "Here's how you can use YouTube SEO for your small business. Simple YouTube videos can boost website traffic and sales when they're compelling.",
+      "url": "https://www.businessinsider.com/how-to-use-youtube-seo-for-small-business-traffic-2023-10",
+      "imagen": "https://i.insider.com/65393b5296f7540cd0655266?width=1200&format=jpeg",
+      "fecha": "2023-10-27T19:07:14Z",
+      "contenido": "Dielle Charon, a sales coach.Kaylee LaMoine\r\n<ul>\n<li>Starting a YouTube channel can be a heavy lift but can have big marketing benefits.</li>\n<li>To get the most out of it, optimize it for customer … [+6351 chars]",
       "id": 4
+    },
+    {
+      "fuente": "Business Insider",
+      "autor": "Lakshmi Varanasi",
+      "titulo": "Elon Musk says AI means eventually no one will need to work",
+      "descripcion": "In a conversation with UK prime minister Rishi Sunak, Elon Musk said that AI will lead to world where there will be no need for jobs.",
+      "url": "https://www.businessinsider.com/elon-musk-predicts-ai-will-lead-to-future-no-jobs-2023-11",
+      "imagen": "https://i.insider.com/654438ee3cc84b4dfafb7901?width=1200&format=jpeg",
+      "fecha": "2023-11-03T01:17:09Z",
+      "contenido": "Rishi Sunak and Elon Musk talked about risks and benefits at the close of the UK's AI Safety Summit on Thursday.WPA Pool\r\n<ul><li>UK Prime Minister Rishi Sunak and Elon Musk chatted about AI at the c… [+1955 chars]",
+      "id": 5
     }
   ]
 }
