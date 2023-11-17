@@ -14,9 +14,9 @@ export class FavoritasPageComponent {
   constructor(private apiFavoritas: FavoritasService) {}
 
   ngOnInit(): void{
-    this.apiFavoritas.getFavs().subscribe((listado)=>{
+    /* this.apiFavoritas.getFavs().subscribe((listado)=>{
       this.listadoFavoritas = listado;
-    })
+    }) */
   }
 
 

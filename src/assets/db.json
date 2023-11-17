@@ -23,15 +23,15 @@
       "id": 2
     },
     {
-      "fuente": "Codeberg.org",
-      "autor": "gsou",
-      "titulo": "An implementation of Common Lisp targeting Lua",
-      "descripcion": "Lua Common Lisp. An implementation of Common Lisp targeting Lua.",
-      "url": "https://codeberg.org/gsou/LCL",
-      "imagen": "https://codeberg.org/avatars/947df15c5dc08e5fdd36d184ad0015c5",
-      "fecha": "2023-11-09T12:54:39Z",
-      "contenido": "After loading lcl.lua, the Lua VM is ready to run Common Lisp code. To do that, the lisp functions can be directly called by Lua or by the host application by following the calling convention.\r\nNote … [+2910 chars]",
-      "id": 3
+      "fuente": "Android Central",
+      "autor": "tips@androidcentral.com (Nickolas Diaz)",
+      "titulo": "Google Chrome gains a 'smarter' address bar for searches and bookmarks",
+      "descripcion": "Google details several updates arriving on Chrome for desktop and mobile for the betterment of its address bar.",
+      "url": "https://www.androidcentral.com/apps-software/google-chrome-address-bar-upgrades",
+      "imagen": "https://cdn.mos.cms.futurecdn.net/3RkHnVcSQdbrdcrEb9pjpQ-1200-80.jpg",
+      "fecha": "2023-10-18T18:39:27Z",
+      "contenido": "<ul><li>Google details new improvements arriving for Chrome on desktop, such as \"smarter\" auto-completions for previously visited URLs.</li><li>The address bar will also display popular website sugge… [+2750 chars]",
+      "id": 4
     }
   ]
 }
