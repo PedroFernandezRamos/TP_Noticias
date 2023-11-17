@@ -6,20 +6,21 @@ import { FuentePageComponent } from './pages/fuente-page/fuente-page.component';
 import { PaisPageComponent } from './pages/pais-page/pais-page.component';
 import { PalabraClavePageComponent } from './pages/palabra-clave-page/palabra-clave-page.component';
 import { FechaPageComponent } from './pages/fecha-page/fecha-page.component';
+import { FavoritasPageComponent } from './pages/favoritas-page/favoritas-page.component';
 
 const routes: Routes = [
-  {path:'home', component: HomePageComponent},
-  {path:'categoria', component: CategoriaPageComponent},
-  {path:'fuente', component: FuentePageComponent},
-  {path:'pais', component: PaisPageComponent},
-  {path:'palabra_clave', component: PalabraClavePageComponent},
-  {path:'fecha', component: FechaPageComponent},
-  {path:'**', redirectTo:'home'},
-  
+  { path: 'home', component: HomePageComponent },
+  { path: 'categoria', component: CategoriaPageComponent },
+  { path: 'fuente', component: FuentePageComponent },
+  { path: 'pais', component: PaisPageComponent },
+  { path: 'palabra_clave', component: PalabraClavePageComponent },
+  { path: 'fecha', component: FechaPageComponent },
+  { path: 'favoritas', component: FavoritasPageComponent },
+  { path: '**', redirectTo: 'home' },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

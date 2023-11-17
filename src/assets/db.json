@@ -21,6 +21,17 @@
       "fecha": "2023-10-20T19:15:00Z",
       "contenido": "Colorados Supreme Court this week had the opportunity to hand down a historic judgment on the constitutionality of reverse keyword search warrants, a powerful new surveillance technique that grants l… [+15880 chars]",
       "id": 2
+    },
+    {
+      "fuente": "Codeberg.org",
+      "autor": "gsou",
+      "titulo": "An implementation of Common Lisp targeting Lua",
+      "descripcion": "Lua Common Lisp. An implementation of Common Lisp targeting Lua.",
+      "url": "https://codeberg.org/gsou/LCL",
+      "imagen": "https://codeberg.org/avatars/947df15c5dc08e5fdd36d184ad0015c5",
+      "fecha": "2023-11-09T12:54:39Z",
+      "contenido": "After loading lcl.lua, the Lua VM is ready to run Common Lisp code. To do that, the lisp functions can be directly called by Lua or by the host application by following the calling convention.\r\nNote … [+2910 chars]",
+      "id": 3
     }
   ]
 }

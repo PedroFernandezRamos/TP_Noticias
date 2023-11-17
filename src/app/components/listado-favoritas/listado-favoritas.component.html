@@ -1,0 +1,13 @@
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col" *ngFor="let noticia of listadoFavoritas">
+      <div class="card">
+        <img [src]="noticia.imagen" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{noticia.titulo}}</h5>
+          <p class="card-text">{{noticia.descripcion}}</p>
+        </div>
+      </div>
+      <a [href]="noticia.url" class="btn btn-primary btn-block" target="_blank"> Más información</a>
+      <button (click)="onEliminar(noticia)" class="btn btn-secondary btn-block" >Eliminar</button>
+    </div>
+  </div>
