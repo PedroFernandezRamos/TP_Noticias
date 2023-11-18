@@ -25,6 +25,7 @@ import { ListadoFavoritasComponent } from './components/listado-favoritas/listad
 import { FavoritasPageComponent } from './pages/favoritas-page/favoritas-page.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
+import { BotonComponent } from './components/boton/boton.component';
 
 
 @NgModule({
@@ -49,7 +50,8 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
     ListadoFavoritasComponent,
     FavoritasPageComponent,
     ContactoComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    BotonComponent
   ],
   imports: [
     BrowserModule,

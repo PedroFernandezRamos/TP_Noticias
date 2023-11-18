@@ -10,13 +10,17 @@ import { FavoritasService } from 'src/app/services/favoritas.service';
 export class ListadoNoticiasComponent implements OnInit {
   @Input() listadoNoticias: Noticia[] = [];
 
+  clicked: boolean = false;
+
   constructor(private favoritasService: FavoritasService) {}
 
   ngOnInit(): void {}
 
-  onGuardar(noticia: Noticia) {
-    this.favoritasService.postFav(noticia).subscribe(
-      //@todo deshabilitar botón
-    )
+  handleClick(noticia: Noticia): void {
+    this.favoritasService.postFav(noticia).subscribe();
   }
+
+  /* onGuardar(noticia: Noticia) {
+    this.favoritasService.postFav(noticia).subscribe();
+  } */
 }

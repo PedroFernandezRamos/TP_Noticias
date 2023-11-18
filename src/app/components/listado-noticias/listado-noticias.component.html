@@ -1,13 +1,30 @@
 <div class="row row-cols-1 row-cols-md-2 g-4">
-    <div class="col" *ngFor="let noticia of listadoNoticias">
-      <div class="card">
-        <img [src]="noticia.imagen" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">{{noticia.titulo}}</h5>
-          <p class="card-text">{{noticia.descripcion}}</p>
-        </div>
+  <div class="col" *ngFor="let noticia of listadoNoticias">
+    <div class="card">
+      <img [src]="noticia.imagen" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">{{ noticia.titulo }}</h5>
+        <p class="card-text">{{ noticia.descripcion }}</p>
       </div>
-      <a [href]="noticia.url" class="btn btn-primary btn-block" target="_blank"> Más información</a>
-      <button (click)="onGuardar(noticia)" class="btn btn-secondary btn-block" >Guardar</button>
     </div>
+    <a [href]="noticia.url" class="btn btn-primary btn-block" target="_blank">
+      Más información</a
+    >
+   <!--  <button
+      [disabled]="clicked"
+      (click)="onGuardar(noticia)"
+      [class]="
+        this.clicked
+          ? 'btn btn-secondary btn-block'
+          : 'btn btn-success btn-block'
+      "
+    >
+      Guardar
+    </button> -->
+    <app-boton [textoActivo]="'Guardar'" [textoInactivo]="'Guardado'"
+      (buttonClicked)="handleClick(noticia)"
+      [claseBtnInactivo]="'btn btn-secondary btn-block'"
+      [claseBtnActivo]="'btn btn-success btn-block'"
+    ></app-boton>
   </div>
+</div>
