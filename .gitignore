@@ -42,3 +42,4 @@ testem.log
 Thumbs.db
 
 src\assets\db.json
+src/assets/db.json
