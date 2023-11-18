@@ -28,18 +28,30 @@ export class HomePageComponent{
         console.log(resultado);
         this.loading = false;
         const articulos: any[] = resultado.articles;
+        let partesFecha:string[]=[]
+        let fechaAMD:string = ''
+        let aut:string = ''
 
         articulos.forEach(element => {
-          
-          if(element.urlToImage != null){                 ///si tiene imagen lo carga a la lista y sino pasa al siguiente elemento
+
+          if(element.urlToImage != null || element.urlToImage != ''){                 ///si tiene imagen lo carga a la lista y sino pasa al siguiente elemento
+
+            aut = 'Desconocido'
+            if(element.author != null || element.author != ''){                /// Si tiene autor lo carga y si no lo pone como desconocido
+              aut = element.author
+            }
+  
+            partesFecha = element.publishedAt.split('T')    // Divide la cadena en función de la letra "T"
+            fechaAMD = partesFecha[0]                       // Toma la primera parte (antes de la "T")
+
             this.listadoDeNoticias.push({
               fuente: element.source.name,
-              autor: element.author,
+              autor: aut,
               titulo: element.title,
              descripcion: element.description,
              url: element.url,
              imagen: element.urlToImage,
-             fecha: element.publishedAt,
+             fecha: fechaAMD,
             contenido: element.content
           })
           }

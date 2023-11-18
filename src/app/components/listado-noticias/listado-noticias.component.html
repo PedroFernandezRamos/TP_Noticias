@@ -5,9 +5,13 @@
         <div class="card-body">
           <h5 class="card-title">{{noticia.titulo}}</h5>
           <p class="card-text">{{noticia.descripcion}}</p>
+          <div class="autor-fecha">
+            <p class="card-author">Autor: <strong>{{noticia.autor}}</strong></p>
+            <p class="card-date">Fecha: <strong>{{noticia.fecha}}</strong></p>
+          </div>
         </div>
       </div>
-      <a [href]="noticia.url" class="btn btn-primary btn-block" target="_blank"> Más información</a>
+      <a [href]="noticia.url" class="btn btn-primary btn-block" target="_blank">Más información</a>
       <button (click)="onGuardar(noticia)" class="btn btn-secondary btn-block" >Guardar</button>
     </div>
   </div>

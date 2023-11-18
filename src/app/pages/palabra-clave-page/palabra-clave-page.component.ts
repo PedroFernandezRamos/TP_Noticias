@@ -26,21 +26,35 @@ export class PalabraClavePageComponent {
         this.loading = false;
         const articulos: any[] = resultado.articles;
         let img:string = ''
+        let partesFecha:string[]=[]
+        let fechaAMD:string = ''
+        let aut:string = ''
 
         articulos.forEach(element => {
+
+          aut = 'Desconocido'
+          if(element.author != null || element.author != ''){                /// Si tiene autor lo carga y si no lo pone como desconocido
+            aut = element.author
+          }
+
           
           img = 'https://img.freepik.com/vector-premium/icono-marco-fotos-foto-vacia-blanco-vector-sobre-fondo-transparente-aislado-eps-10_399089-1290.jpg'
-          if(element.urlToImage != null){                /// si tiene imagen la carga y si no pone por default una vacia
+          if(element.urlToImage != null || element.urlToImage != ''){                /// Si tiene imagen la carga y si no pone por default una vacia
             img = element.urlToImage
           }
+
+          partesFecha = element.publishedAt.split('T')    // Divide la cadena en función de la letra "T"
+          fechaAMD = partesFecha[0]                       // Toma la primera parte (antes de la "T")
+
+
             this.listadoDeNoticias.push({
               fuente: element.source.name,
-              autor: element.author,
+              autor: aut,
               titulo: element.title,
              descripcion: element.description,
              url: element.url,
              imagen: img,
-             fecha: element.publishedAt,
+             fecha: fechaAMD,
             contenido: element.content
           })
         });
