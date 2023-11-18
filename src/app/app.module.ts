@@ -20,7 +20,6 @@ import { FiltroFechaComponent } from './components/filtro-fecha/filtro-fecha.com
 import { PalabraClavePageComponent } from './pages/palabra-clave-page/palabra-clave-page.component';
 import { FechaPageComponent } from './pages/fecha-page/fecha-page.component';
 import { FooterComponent } from './shared/footer/footer.component';
-import { NoticiaCardComponent } from './components/noticia-card/noticia-card.component';
 import { ListadoFavoritasComponent } from './components/listado-favoritas/listado-favoritas.component';
 import { FavoritasPageComponent } from './pages/favoritas-page/favoritas-page.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
@@ -46,7 +45,6 @@ import { BotonComponent } from './components/boton/boton.component';
     PalabraClavePageComponent,
     FechaPageComponent,
     FooterComponent,
-    NoticiaCardComponent,
     ListadoFavoritasComponent,
     FavoritasPageComponent,
     ContactoComponent,

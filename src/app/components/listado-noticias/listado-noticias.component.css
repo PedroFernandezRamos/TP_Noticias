@@ -1,0 +1,10 @@
+.autor-fecha{
+    display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.card-author,
+.card-date {
+  margin: 0;
+}

@@ -10,7 +10,7 @@ import { FavoritasService } from 'src/app/services/favoritas.service';
 export class ListadoNoticiasComponent implements OnInit {
   @Input() listadoNoticias: Noticia[] = [];
 
-  clicked: boolean = false;
+  esFavorito: boolean = false;
 
   constructor(private favoritasService: FavoritasService) {}
 
