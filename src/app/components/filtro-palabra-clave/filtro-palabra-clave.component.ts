@@ -22,10 +22,17 @@ export class FiltroPalabraClaveComponent implements OnInit{
   }
 
   buscarNoticiaPorPalabraClave(){
-    if(this.formulario.invalid){
-      this.formulario.markAllAsTouched()
+
+    if(this.validar('palabraClave', 'required')  || this.formulario.invalid){
+      alert('El campo es requerido.');
       return;
     }
+
+    if(this.validar('palabraClave', 'minlength')){
+      alert('Ingresa como minimo 3 caracteres.');
+      return;
+    }
+
     this.parametrosSeleccionados.emit(this.formulario.controls['palabraClave'].value);
     
   }

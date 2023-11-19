@@ -10,7 +10,7 @@ export class FiltroPaisComponent implements OnInit{
   paisSeleccionado = 'ar';
 
   paises: any[]=[
-    {value: 'ar', nombre:'Argentina'},
+    {value: 'ar', nombre:'Argentina', img: "argentina"},
     {value: 'br', nombre: 'Brazil'},
     {value: 'co', nombre: 'Colombia'},
     {value: 'mx', nombre: 'Mexico'},
@@ -20,6 +20,8 @@ export class FiltroPaisComponent implements OnInit{
   ngOnInit(): void {
     
   }
+
+
 
   buscarNoticiaPorPais(){
     this.parametrosSeleccionados.emit(this.paisSeleccionado);

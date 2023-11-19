@@ -34,10 +34,10 @@ export class HomePageComponent{
 
         articulos.forEach(element => {
 
-          if(element.urlToImage != null || element.urlToImage != ''){                 ///si tiene imagen lo carga a la lista y sino pasa al siguiente elemento
+          if(element.urlToImage != null && element.urlToImage != ''){                 ///si tiene imagen lo carga a la lista y sino pasa al siguiente elemento
 
             aut = 'Desconocido'
-            if(element.author != null || element.author != ''){                /// Si tiene autor lo carga y si no lo pone como desconocido
+            if(element.author != null && element.author != ''){                /// Si tiene autor lo carga y si no lo pone como desconocido
               aut = element.author
             }
   

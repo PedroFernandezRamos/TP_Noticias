@@ -22,13 +22,15 @@ export class FiltroFuenteComponent implements OnInit{
   }
 
   buscarNoticiaPorFuente(){
-    if(this.formulario.invalid){
-      this.formulario.markAllAsTouched()
+    if(this.validar('fuente', 'required')  || this.formulario.invalid){
+      alert('El campo es requerido.');
       return;
     }
+
     let fuenteSeleccionada : string= this.formulario.controls['fuente'].value;
     fuenteSeleccionada= fuenteSeleccionada.toLowerCase().replace(/^\s+|\s+$/g, '').replace(/\s+/g, '-');   /// reemplaza los espacios por - y pone todo en minuscula para que encuentre la fuente
     console.log(fuenteSeleccionada);
+
     this.parametrosSeleccionados.emit(fuenteSeleccionada);
     
   }

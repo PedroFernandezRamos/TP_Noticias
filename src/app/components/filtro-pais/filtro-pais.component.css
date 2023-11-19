@@ -1,13 +1,71 @@
 .heading{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 900;
-    font-size: 2rem;
-    text-transform: uppercase;
-    text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
 .jumbotron{
-    padding: 3rem;
-    background-color: rgb(139, 208, 254);
-    border-radius: .3rem;
+  padding: 3rem;
+  border-radius: .3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.box{
+  max-width: 40rem;
+  width: 100%
+}
+
+.box .search-box{
+  position: relative;
+  height: 5rem;
+  max-width: 38rem;
+  margin: auto;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+
+.search-box input{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  outline: none;
+  border: none;
+  padding-left: 2rem;
+  font-size: 1.8rem;
+}
+
+.search-box .boton{
+  position: absolute;
+  right: -0.2rem;
+  top: 0;
+  width: 6rem;
+  height: 100%;
+  text-align: center;
+  line-height: 5rem;
+  font-size: 2rem;
+
+}
+
+.search-box .boton img{
+  width: 50%;
+  margin-right: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.form-select{
+  width: 85%;
+  height: 4.9rem;
+  border-radius: 0.5rem 0 0 0.5rem ;
+}
+
+option {
+    padding-left: 25px; /* Ajusta el espacio a la izquierda para la bandera */
+    background-repeat: no-repeat;
+    background-position: center left;
+  }
