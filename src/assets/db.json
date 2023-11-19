@@ -1,28 +1,6 @@
 {
   "favs": [
     {
-      "fuente": "MacRumors",
-      "autor": "Juli Clover",
-      "titulo": "Instagram Adds New Filters, Support for Custom Stickers From Photos",
-      "descripcion": "Popular social network Instagram was today updated with a number of improvements that are designed to give users more ways to edit their content before sharing it.\n\n\n\n\n\nInstagram has added more than 20 new filters that can be used to tweak the look of images,…",
-      "url": "https://www.macrumors.com/2023/11/15/instagram-new-filters-stickers/",
-      "imagen": "https://images.macrumors.com/t/5uTtnN9sFarIGArnR_V5kOmf3io=/2250x/article-new/2021/03/Instagram-Feature-2.jpg",
-      "fecha": "2023-11-15T20:32:18Z",
-      "contenido": "Popular social network Instagram was today updated with a number of improvements that are designed to give users more ways to edit their content before sharing it.\r\nInstagram has added more than 20 n… [+1447 chars]",
-      "id": 1
-    },
-    {
-      "fuente": "Gizmodo.com",
-      "autor": "Mack DeGeurin",
-      "titulo": "'Invasive' Google Keyword Search Warrants Get Court Greenlight, Here's Everything You Need to Know",
-      "descripcion": "Colorado’s Supreme Court this week had the opportunity to hand down a historic judgment on the constitutionality of “reverse keyword search warrants,” a powerful new surveillance technique that grants law enforcement the ability to identify potential criminal…",
-      "url": "https://gizmodo.com/reverse-keyword-search-warrants-explainer-colorado-1850945867",
-      "imagen": "https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/5e8c72a80aff7a9ca8a29014ab555ad6.jpg",
-      "fecha": "2023-10-20T19:15:00Z",
-      "contenido": "Colorados Supreme Court this week had the opportunity to hand down a historic judgment on the constitutionality of reverse keyword search warrants, a powerful new surveillance technique that grants l… [+15880 chars]",
-      "id": 2
-    },
-    {
       "fuente": "Business Insider",
       "autor": "Erin Greenawald",
       "titulo": "How 2 successful small-business owners use YouTube for cheap, sustainable, SEO-driven marketing",
@@ -43,6 +21,39 @@
       "fecha": "2023-11-03T01:17:09Z",
       "contenido": "Rishi Sunak and Elon Musk talked about risks and benefits at the close of the UK's AI Safety Summit on Thursday.WPA Pool\r\n<ul><li>UK Prime Minister Rishi Sunak and Elon Musk chatted about AI at the c… [+1955 chars]",
       "id": 5
+    },
+    {
+      "fuente": "ReadWrite",
+      "autor": "Ann Smarty",
+      "titulo": "35 ChatGPT Prompts to Help with Marketing Your Startup",
+      "descripcion": "In the rapidly evolving digital landscape, startups need more than just a good product; they need out-of-the-box marketing strategies. But […]\nThe post 35 ChatGPT Prompts to Help with Marketing Your Startup appeared first on ReadWrite.",
+      "url": "https://readwrite.com/35-chatgpt-prompts-to-help-with-marketing-your-startup/",
+      "imagen": "https://readwrite.com/wp-content/uploads/2023/09/ChatGPT-Prompts-to-Help.jpg",
+      "fecha": "2023-10-19",
+      "contenido": "In the rapidly evolving digital landscape, startups need more than just a good product; they need out-of-the-box marketing strategies. But how can artificial intelligence reshape how startups market … [+11119 chars]",
+      "id": 7
+    },
+    {
+      "fuente": "Gizmodo.com",
+      "autor": "Mack DeGeurin",
+      "titulo": "'Invasive' Google Keyword Search Warrants Get Court Greenlight, Here's Everything You Need to Know",
+      "descripcion": "Colorado’s Supreme Court this week had the opportunity to hand down a historic judgment on the constitutionality of “reverse keyword search warrants,” a powerful new surveillance technique that grants law enforcement the ability to identify potential criminal…",
+      "url": "https://gizmodo.com/reverse-keyword-search-warrants-explainer-colorado-1850945867",
+      "imagen": "https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/5e8c72a80aff7a9ca8a29014ab555ad6.jpg",
+      "fecha": "2023-10-20",
+      "contenido": "Colorados Supreme Court this week had the opportunity to hand down a historic judgment on the constitutionality of reverse keyword search warrants, a powerful new surveillance technique that grants l… [+15880 chars]",
+      "id": 8
+    },
+    {
+      "fuente": "Codeberg.org",
+      "autor": "gsou",
+      "titulo": "An implementation of Common Lisp targeting Lua",
+      "descripcion": "Lua Common Lisp. An implementation of Common Lisp targeting Lua.",
+      "url": "https://codeberg.org/gsou/LCL",
+      "imagen": "https://codeberg.org/avatars/947df15c5dc08e5fdd36d184ad0015c5",
+      "fecha": "2023-11-09",
+      "contenido": "After loading lcl.lua, the Lua VM is ready to run Common Lisp code. To do that, the lisp functions can be directly called by Lua or by the host application by following the calling convention.\r\nNote … [+2910 chars]",
+      "id": 9
     }
   ]
 }

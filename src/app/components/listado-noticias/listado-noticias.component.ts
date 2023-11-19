@@ -17,7 +17,14 @@ export class ListadoNoticiasComponent implements OnInit {
   ngOnInit(): void {}
 
   handleClick(noticia: Noticia): void {
-    this.favoritasService.postFav(noticia).subscribe();
+    this.favoritasService.postFav(noticia).subscribe(
+      (success) => {
+        console.log('Noticia guardada exitosamente!');
+      },
+      (error) => {
+        console.log('Error:', error);
+      }
+    );
   }
 
   /* onGuardar(noticia: Noticia) {
