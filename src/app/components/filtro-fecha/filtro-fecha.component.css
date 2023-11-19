@@ -13,10 +13,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 3rem;
   }
   
   .box{
-    max-width: 40rem;
+    max-width: 60rem;
     width: 100%
   }
   
@@ -25,19 +26,24 @@
     height: 5rem;
     max-width: 38rem;
     margin: auto;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
   }
   
   
   .search-box input{
-
     height: 100%;
-    width: 100%;
+    width: 95%;
     background: #fff;
     outline: none;
     border: none;
-    padding-left: 2rem;
+    padding-left: 1rem;
     font-size: 1.8rem;
+  }
+
+  .cont-boton{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   .search-box .boton{
@@ -49,7 +55,7 @@
     text-align: center;
     line-height: 5rem;
     font-size: 2rem;
-  
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem ;
   }
   
   .search-box .boton img{
@@ -59,14 +65,28 @@
   }
   
 form{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 15rem));
+  grid-gap: 20px;
 
+
+}
+
+.form-group{
+    width: 100%;
+    height: 4.9rem;
 }
 
 .form-control{
     width: 85%;
     height: 4.9rem;
-    border-radius: 0.5rem 0 0 0.5rem ;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem ;
+  }
+
+  .fechas{
+    display: flex;
+    flex-direction: row;
+
+
   }
   
