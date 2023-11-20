@@ -1,24 +1,36 @@
 <div class="jumbotron mt-5 bg-dark">
-    <h2 class="heading text-light">
-        Filtra noticias por pais
-    </h2>
-    <div class="box">
-        <div class="search-box">
-            <form (ngSubmit)="buscarNoticiaPorPais()">
-                  <div class="form-group">
-                    <select class="form-select form-select-lg" name="pais" [(ngModel)]="paisSeleccionado">
-                      <option *ngFor="let pais of paises" [value]="pais.value" data-icon="br">
-                          <span class="flag-icon flag-icon-ar"></span>
-                          {{pais.nombre}}
-                      </option>
-                      
-                    </select>
-                  </div>
-                  <button class="boton bg-dark" type="submit">
-                    <img src="/assets/noticias-word-icon.png" alt="Buscar">
-                  </button>
-            </form>
-            
+  <h2 class="heading text-light">
+    Filtra noticias por pais
+  </h2>
+  <div class="box">
+    <div class="search-box">
+      <form (ngSubmit)="buscarNoticiaPorPais()">
+        <div class="form-group">
+          <div class="form-select form-select-lg">
+            <div class="select" #select (click)="toggleSelect()">
+              <div class="contenido">
+                <img *ngIf="paisSeleccionado" [src]="paisSeleccionado.img" alt="">
+                <h1 class="titulo">{{paisSeleccionado ? paisSeleccionado.nombre : 'Selecciona un país'}}</h1>
+              </div>
+              <i class="fas fa-angle-down"></i>
+            </div>
+
+            <div class="opciones" #opciones [class.active]="opcionesAbiertas">
+              <a class="opcion" *ngFor="let pais of paises" (click)="selectCountry(pais)">
+                <div class="contenido">
+                  <img [src]="pais.img" alt="">
+                  <h1 class="titulo">{{pais.nombre}}</h1>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <input type="hidden" name="pais" id="inputSelect" [(ngModel)]="paisSeleccionado" value="">
         </div>
+        <button class="boton bg-dark" type="submit">
+          <img src="/assets/noticias-word-icon.png" alt="Buscar">
+        </button>
+      </form>
     </div>
+  </div>
 </div>

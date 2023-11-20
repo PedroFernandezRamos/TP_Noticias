@@ -18,8 +18,8 @@
               <span class="visually-hidden">(current)</span>
             </a>
           </li>
-        </ul>
-          <ul class="navbar-nav me-auto">
+        </ul >
+          <ul class="navbar-nav" >
             <li class="nav-item dropdown" (mouseenter)="openMenu()" (mouseleave)="closeMenu()">
               <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Buscar por</a>
               <div [ngClass]="{'dropdown-menu show': isMenuOpen, 'd-none': !isMenuOpen}" data-bs-popper="static">

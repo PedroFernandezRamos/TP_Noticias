@@ -2,14 +2,14 @@
   <div class="col" *ngFor="let noticia of listadoNoticias">
     <div class="card">
       <img [src]="noticia.imagen" class="card-img-top" alt="..." />
-      <div class="card-body">
-        <h5 class="card-title">{{ noticia.titulo }}</h5>
-        <p class="card-text">{{ noticia.descripcion }}</p>
-        <div class="autor-fecha">
-          <p class="card-author">
+      <div class="card-body bg-dark">
+        <h5 class="card-title text-light">{{ noticia.titulo }}</h5>
+        <p class="card-text text-light">{{ noticia.descripcion }}</p>
+        <div class="autor-fecha ">
+          <p class="card-author text-light">
             Autor: <strong>{{ noticia.autor }}</strong>
           </p>
-          <p class="card-date">
+          <p class="card-date text-light">
             Fecha: <strong>{{ noticia.fecha }}</strong>
           </p>
         </div>

@@ -7,7 +7,6 @@ import { Observable } from 'rxjs';
 })
 export class NoticiasServiceService {
   apiKey = '98e75c81bc2a46bda3be4e2d6a695820'; //key de fede
-  //corsPrefix = 'https://cors-anywhere.herokuapp.com/';
 
   constructor(private http: HttpClient) {}
 
@@ -72,8 +71,3 @@ export class NoticiasServiceService {
   }
 }
 
-/// REQUISITOS FUNCIONALES QUE NOS PIDIERON:
-/// -El sistema debe permitir que el usuario vea noticias generales (más nuevas)
-/// -El sistema debe permitir que el usuario busque noticias por categoría
-/// -El sistema debe permitir que el usuario busque noticias por fuente (escrito)
-/// -El sistema debe permitir que el usuario guarde noticias favoritas para ver más tarde
