@@ -37,13 +37,13 @@ export class FechaPageComponent {
         articulos.forEach(element => {
 
           aut = 'Desconocido'
-          if(element.author != null || element.author != ''){                /// Si tiene autor lo carga y si no lo pone como desconocido
+          if(element.author != null && element.author != ''){                /// Si tiene autor lo carga y si no lo pone como desconocido
             aut = element.author
           }
 
           
           img = 'https://img.freepik.com/vector-premium/icono-marco-fotos-foto-vacia-blanco-vector-sobre-fondo-transparente-aislado-eps-10_399089-1290.jpg'
-          if(element.urlToImage != null || element.urlToImage != ''){                /// Si tiene imagen la carga y si no pone por default una vacia
+          if(element.urlToImage != null && element.urlToImage != ''){                /// Si tiene imagen la carga y si no pone por default una vacia
             img = element.urlToImage
           }
 

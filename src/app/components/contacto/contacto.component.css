@@ -18,17 +18,17 @@
 }
 
 .contact-us h3,
-p {
-    color: #fff
+a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .address {
     margin-top: 14px !important;
-    margin-left: 10px
 }
 
-.address, .call, .mail {
-    color: #7B1FA2;
+.address, .call, .mail{
+    margin-left: 15px;
 }
 
 .icons {
@@ -81,4 +81,8 @@ p {
 
 .form-control {
     padding: .375rem .25rem
+}
+
+.row{
+    margin: 0;
 }

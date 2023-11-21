@@ -9,40 +9,49 @@
                                 <div class="mt-5 text-center px-3"> 
                                     <div class="d-flex flex-row align-items-center"> 
                                         <span class="icons">
-                                            <i class="fa fa-map-marker"></i>
+                                            <img src="assets/location.png" alt="">
                                         </span> 
                                         <div class="address text-left"> 
-                                            <span>Address</span> 
-                                            <p>461, Sugar camp, San jose, California, USA</p> 
+                                            <p> 
+                                                <a href="https://www.google.com/maps?q=461,Sugar+camp,San+jose,California,USA" target="_blank">
+                                                461, Sugar camp, San Jose, California, USA
+                                            </a>
+                                        </p> 
                                         </div> 
                                     </div> 
                                     <div class="d-flex flex-row align-items-center mt-3"> 
-                                        <span class="icons"><i class="fa fa-phone"></i></span> 
+                                        <span class="icons">
+                                            <img src="assets/phone-call.png" alt="">
+                                        </span> 
                                         <div class="call text-left"> 
-                                            <span>Phone</span> 
-                                            <p>501 205 2929</p> </div> 
-                                        </div> 
+                                            <p> <a href="tel:5012052929">501 205 2929 </a></p> 
+                                        </div>  
+                                    </div>
                                         <div class="d-flex flex-row align-items-center mt-3"> 
-                                            <span class="icons"><i class="fa fa-envelope-o"></i></span> 
-                                            <div class="mail text-left"> 
-                                                <span>Mail</span> 
-                                                <p>noticiasword@gmail.com</p> 
-                                            </div> </div> </div> </div> 
-                                            <div class="col-md-6">
-                                                <div class="text-center px-1">
-                                                  <div class="forms p-4 py-5 bg-white">
-                                                    <h5>Formulario de contacto</h5>
-                                                    <div class="mt-4 inputs">
-                                                        <input type="text" class="form-control" placeholder="Nombre" [(ngModel)]="fromName">
-                                                        <input type="text" class="form-control" placeholder="Email" [(ngModel)]="toEmail">
-                                                        <textarea class="form-control" placeholder="Mensaje" [(ngModel)]="message"></textarea>
-                                                      </div>
-                                                      <div class="button mt-4 text-left">
-                                                        <button class="btn btn-dark" (click)="sendEmail()">Enviar</button>
-                                                      </div>
-                                                  </div>
+                                            <span class="icons">
+                                                <img src="assets/email.png" alt="">
+                                            </span> 
+                                            <div class="mail text-left">  
+                                                <p><a href="mailto:noticiasword@gmail.com">noticiasword@gmail.com</a></p>
+                                            </div> 
+                                        </div> 
+                                    </div> 
+                                </div> 
+                                <div class="col-md-6" style="margin-top: 18px;">
+                                    <div class="text-center px-1">
+                                        <div class="forms p-4 py-5 bg-white">
+                                            <h5>Formulario de contacto</h5>
+                                                <div class="mt-4 inputs">
+                                                    <input type="text" class="form-control" placeholder="Nombre" [(ngModel)]="fromName">
+                                                    <input type="text" class="form-control" placeholder="Email" [(ngModel)]="toEmail">
+                                                    <textarea class="form-control" placeholder="Mensaje" [(ngModel)]="message"></textarea>
+                                                </div>
+                                                <div class="button mt-4 text-left">
+                                                    <button class="btn btn-dark" (click)="sendEmail()">Enviar</button>
+                                                    </div>
                                                 </div>
                                             </div>
+                                        </div>
                                     </div> 
                                 </div> 
                             </div> 
