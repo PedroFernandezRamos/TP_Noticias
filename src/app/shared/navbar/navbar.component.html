@@ -21,7 +21,7 @@
         </ul >
           <ul class="navbar-nav" >
             <li class="nav-item dropdown" (mouseenter)="openMenu()" (mouseleave)="closeMenu()">
-              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Buscar por</a>
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Buscar por</a>
               <div [ngClass]="{'dropdown-menu show': isMenuOpen, 'd-none': !isMenuOpen}" data-bs-popper="static">
                   <a class="nav-link active" href="#" routerLink="/categoria">Categoria</a>
                   <a class="nav-link active" href="#" routerLink="/pais">País</a>

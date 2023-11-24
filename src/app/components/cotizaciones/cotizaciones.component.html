@@ -1,0 +1,71 @@
+<div class="cotizaciones-dolar">
+    <div class="cotizacion dolar-blue" *ngIf="dolarBlueData">
+        <p class="titulo">DÓLAR BLUE</p>
+        <P>Actualizado el {{dolarBlueData.fechaActualizacion}}</P>
+        <div class="precios">
+            <p>Compra ${{ dolarBlueData.compra }}</p>
+            <p>Venta ${{ dolarBlueData.venta }}</p>
+        </div>
+    </div>
+
+    <div class="cotizaciones-otros">
+        <div class="cotizacion size" *ngIf="dolarOficialData">
+            <p class="titulo">DÓLAR OFICIAL</p>
+            <div class="precios">
+                <p>Compra ${{ dolarOficialData.compra }}</p>
+                <p>Venta ${{ dolarOficialData.venta }}</p>
+            </div>
+        </div>
+
+        <div class="cotizacion size" *ngIf="dolarBolsaData">
+            <p class="titulo">DÓLAR BOLSA</p>
+            <div class="precios">
+                <p>Compra ${{ dolarBolsaData.compra }}</p>
+                <p>Venta ${{ dolarBolsaData.venta }}</p>
+            </div>
+        </div>
+
+        <div class="cotizacion size" *ngIf="dolarTarjetaData">
+            <p class="titulo">DÓLAR TARJETA</p>
+            <div class="precios">
+                <p>Compra ${{ dolarTarjetaData.compra }}</p>
+                <p>Venta ${{ dolarTarjetaData.venta }}</p>
+            </div>
+        </div>
+
+        <div class="cotizacion size" *ngIf="dolarCCLData">
+            <p class="titulo">CONTADO CON LIQUI </p>
+            <div class="precios">
+                <p>Compra ${{ dolarCCLData.compra }}</p>
+                <p>Venta ${{ dolarCCLData.venta }}</p>
+            </div>
+        </div>
+</div>
+
+<div class="cotizaciones-otras">
+
+    <div class="cotizacion size-otras" *ngIf="euroData">
+        <p>EURO</p>
+        <p>Compra ${{ euroData.compra }}</p>
+        <p>Venta ${{ euroData.venta }}</p>
+    </div>
+
+    <div class="cotizacion size-otras" *ngIf="realData">
+        <p>REAL BRASILERÑO</p>
+        <p>Compra ${{ realData.compra }}</p>
+        <p>Venta ${{ realData.venta }}</p>
+    </div>
+
+    <div class="cotizacion size-otras" *ngIf="pesoChileData">
+        <p>PESO CHILENO</p>
+        <p>Compra ${{ pesoChileData.compra }}</p>
+        <p>Venta ${{ pesoChileData.venta }}</p>
+    </div>
+
+    <div class="cotizacion size-otras" *ngIf="pesoUruData">
+        <p>PESO URUGUAYO</p>
+        <p>Compra ${{ pesoUruData.compra }}</p>
+        <p>Venta ${{ pesoUruData.venta }}</p>
+    </div>
+
+</div>

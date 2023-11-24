@@ -1,0 +1,11 @@
+.bar-dolar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #212529;
+    color: rgb(255, 255, 255);
+}
+
+.bar-dolar p{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}

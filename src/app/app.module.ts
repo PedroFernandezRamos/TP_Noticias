@@ -25,6 +25,9 @@ import { FavoritasPageComponent } from './pages/favoritas-page/favoritas-page.co
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { BotonComponent } from './components/boton/boton.component';
+import { BarDolarComponent } from './components/bar-dolar/bar-dolar.component';
+import { CotizacionesComponent } from './components/cotizaciones/cotizaciones.component';
+import { CotizacionesPageComponent } from './pages/cotizaciones-page/cotizaciones-page.component';
 
 
 @NgModule({
@@ -49,7 +52,10 @@ import { BotonComponent } from './components/boton/boton.component';
     FavoritasPageComponent,
     ContactoComponent,
     AboutUsComponent,
-    BotonComponent
+    BotonComponent,
+    BarDolarComponent,
+    CotizacionesComponent,
+    CotizacionesPageComponent
   ],
   imports: [
     BrowserModule,

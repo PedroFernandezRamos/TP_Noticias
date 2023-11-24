@@ -1,0 +1,19 @@
+<div class="bar-dolar">
+
+    <div *ngIf="dolarBlueData">
+        <p>Dólar blue: ${{ dolarBlueData.compra}}</p>
+    </div>
+
+    <div *ngIf="dolarOficialData">
+        <p>Dolar oficial: ${{ dolarOficialData.compra }}</p>
+    </div>
+      
+    <div *ngIf="dolarBolsaData">
+        <p>Dolar bolsa: ${{ dolarBolsaData.compra }}</p>
+    </div>
+      
+    <div *ngIf="dolarTarjetaData">
+        <p>Dolar tarjeta: ${{ dolarTarjetaData.compra }}</p>
+    </div>
+
+</div>

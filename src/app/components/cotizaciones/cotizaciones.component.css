@@ -1,0 +1,63 @@
+.cotizaciones-dolar {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.cotizaciones-dolar p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.cotizacion {
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #ecf0f1;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cotizacion.dolar-blue {
+    flex-basis: 30%;
+    padding: 15px;
+}
+
+.size {
+    margin-left: 3rem;
+    width: 30rem;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo {
+    justify-content: center;
+}
+
+.precios {
+    display: b;
+    justify-content: space-between;
+}
+
+.precios p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #e74c3c;
+    margin: 0;
+}
+
+.cotizaciones-otras{
+    display: flex;
+    flex-direction:row;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.size-otras{
+    margin-left: 5rem;
+    width: 15rem;
+}
+    
